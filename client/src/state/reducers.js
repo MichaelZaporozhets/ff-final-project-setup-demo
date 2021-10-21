@@ -25,6 +25,6 @@ const ACTION_MAP = {
 
 export const reducer = (state, action) => ACTION_MAP[action.type]({ state, action });
 
-export function useProductReducer(initialState) {
+export function useAppReducer(initialState) {
   return useReducer(reducer, initialState);
 }
